@@ -2,23 +2,20 @@ module.exports = {
   root: true,
   parser: 'vue-eslint-parser',
   parserOptions: {
+    ecmaVersion: 2022, // <-
     sourceType: 'module',
-    requireConfigFile: false,
-    parser: '@typescript-eslint/parser'
   },
   env: {
     browser: true,
-    'jest/globals': true
+    amd: true,
+    node: true,
+    'vue/setup-compiler-macros': true,
   },
-  overrides: [
-    {
-      files: ['**/*.test.js'],
-      extends: ['plugin:jest/recommended', 'plugin:jest/style']
-    }
-  ],
-  extends: ['prettier', 'standard', 'plugin:vue/vue3-recommended'],
-  plugins: ['html'],
+  extends: ['plugin:vue/strongly-recommended', 'eslint:recommended', '@vue/typescript/recommended', 'prettier'],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    indent: ['error', 2]
-  }
+    'prettier/prettier': 'error',
+    // not needed for vue 3
+    'vue/no-multiple-template-root': 'off',
+  },
 }

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    dasd
-  </div>
+  <div>s</div>
 </template>
 
 <script setup lang="ts">

@@ -11,9 +11,8 @@ export default defineConfig(() => {
     plugins: [
       vue(),
       ViewLauncherVuePlugin({
-        entry: path.resolve(__dirname, './src/main.js'),
+        entry: path.resolve(__dirname, './src/main.ts'),
         theme: 'dark',
-        pathMap: ['/app/', process.env.VIEW_LAUNCHER_LOCAL_PATH || '']
       })
     ]
   }
