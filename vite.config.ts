@@ -30,7 +30,7 @@ export default defineConfig({
         'src/composables',
         'src/store',
       ],
-      vueTemplate: true,
+      vueTemplate: true
     }),
     Pages(),
     VueI18n({
