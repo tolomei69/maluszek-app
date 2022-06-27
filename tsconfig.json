@@ -17,18 +17,18 @@
       "dom"
     ],
     "skipLibCheck": true,
-    "paths": {
-      "~/*": [
-        "src/*"
-      ]
-    },
     "types": [
       "node",
       "vitest",
       "vite/client",
       "vue/ref-macros",
       "vite-plugin-pages/client"
-    ]
+    ],
+    "paths": {
+      "~/*": [
+        "src/*"
+      ]
+    },
   },
   "include": [
     "src/**/*.ts",

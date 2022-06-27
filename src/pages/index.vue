@@ -14,7 +14,7 @@ const { t } = useI18n()
 <template>
     <div>
         <button btn m-3 text-sm :disabled="!name" @click="go">
-            {{ t('button.go') }}
+            {{ t('button.about') }}
         </button>
     </div>
 </template>
