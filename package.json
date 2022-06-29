@@ -1,7 +1,7 @@
 {
   "name": "maluszek-app",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "packageManager": "pnpm@7.1.6",
   "scripts": {
     "dev": "vite --port 3333 --open",
@@ -18,15 +18,17 @@
     "vue-router": "^4.0.16"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@types/node": "^18.0.0",
     "@vitejs/plugin-vue": "^2.3.3",
-    "typescript": "^4.5.4",
     "eslint": "^8.18.0",
     "pnpm": "^7.3.0",
+    "typescript": "^4.5.4",
     "unplugin-auto-import": "^0.9.1",
     "vite": "^2.9.9",
     "vite-plugin-pages": "^0.24.2",
+    "vite-plugin-vue-layouts": "^0.6.0",
     "vitest": "^0.16.0",
     "vue-tsc": "^0.34.7"
   }
