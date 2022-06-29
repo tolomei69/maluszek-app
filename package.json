@@ -2,8 +2,9 @@
   "name": "maluszek-app",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "pnpm@7.1.6",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3333 --open",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest",
@@ -22,6 +23,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.5.4",
     "eslint": "^8.18.0",
+    "pnpm": "^7.3.0",
     "unplugin-auto-import": "^0.9.1",
     "vite": "^2.9.9",
     "vite-plugin-pages": "^0.24.2",
